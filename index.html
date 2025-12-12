@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartPark | Uzair Shah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>SmartPark System</h1>
+                <p>Project Owner: <strong>Uzair Shah</strong></p>
+            </div>
+            <div class="stats">
+                <p>Available Slots: <span id="available-slots">10</span></p>
+            </div>
+        </header>
+
+        <section class="control-panel">
+            <div class="input-group">
+                <label for="vehicle-type">Vehicle Type:</label>
+                <select id="vehicle-type">
+                    <option value="Car">Car Parking</option>
+                    <option value="Bike">Bike Parking</option>
+                </select>
+            </div>
+            <div class="button-group">
+                <button onclick="getParking()" class="btn-get">Get Parking</button>
+                <button onclick="exitParking()" class="btn-exit">Exit Parking</button>
+            </div>
+        </section>
+
+        <main>
+            <div class="parking-grid" id="grid"></div>
+        </main>
+
+        <footer class="logs">
+            <h3>Activity Logs</h3>
+            <ul id="log-list"></ul>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
